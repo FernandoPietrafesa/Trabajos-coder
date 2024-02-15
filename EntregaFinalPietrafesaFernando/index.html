@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce de Ropa Deportiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>E-commerce de Ropa Deportiva</h1>
+    </header>
+
+    <main>
+        <section id="products" class="container">
+            <!-- Aquí se mostrarán los productos -->
+            <div class="product">
+                <img src="images/product1.jpg" alt="Camiseta deportiva">
+                <h3>Camiseta deportiva</h3>
+                <p>$20.00</p>
+                <button onclick="addToCart(1)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="images/product2.jpg" alt="Pantalones cortos">
+                <h3>Pantalones cortos</h3>
+                <p>$25.00</p>
+                <button onclick="addToCart(2)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="images/product3.jpg" alt="Zapatillas deportivas">
+                <h3>Zapatillas deportivas</h3>
+                <p>$50.00</p>
+                <button onclick="addToCart(3)">Agregar al carrito</button>
+            </div>
+            <!-- Añadir más productos aquí -->
+        </section>
+
+        <aside id="cart">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items">
+                <!-- Aquí se mostrarán los elementos del carrito -->
+            </ul>
+            <p id="total">Total: $0.00</p>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
